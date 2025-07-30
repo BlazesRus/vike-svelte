@@ -6,7 +6,7 @@ export default {
 
   name: "vike-svelte",
   require: {
-    vike: ">=0.4.195",
+    vike: ">=0.4.236",
   },
 
   // https://vike.dev/onRenderHtml

@@ -1,3 +1,4 @@
 packages:
-  - 'packages/*'
+  - 'packages/**'
+  - 'packages/@blazesrus/vike-svelte/'
   - 'examples/*'
