@@ -1,5 +1,5 @@
 {
-  "name": "vike-svelte",
+  "name": "@blazesrus/vike-svelte",
   "version": "1.0.1",
   "type": "module",
   "main": "./renderer/+config.js",
@@ -51,6 +51,6 @@
     "components/",
     "hooks/"
   ],
-  "repository": "github:brandonxiang/vike-svelte",
+	"repository": "github:blazesrus/vike-svelte",
   "license": "MIT"
 }

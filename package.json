@@ -1,20 +1,19 @@
 {
+  "name": "@blazesrus/vike-svelte",
+  "workspaces": [
+    "packages/@blazesrus/vike-svelte"
+  ],
   "scripts": {
-    "dev": "cd packages/vike-svelte/ && pnpm run dev",
-    "build": "cd packages/vike-svelte/ && pnpm run build",
+    "dev": "cd packages/@blazesrus/vike-svelte/ && pnpm run dev",
+    "build": "cd packages/@blazesrus/vike-svelte/ && pnpm run build",
     "========= Clean": "",
     "clean": "git clean -Xdf",
     "reset": "pnpm run clean && pnpm install && pnpm run build",
     "========= Release": "",
-    "release": "cd packages/vike-svelte/ && pnpm run release",
-    "release:commit": "cd packages/vike-svelte/ && pnpm run release:commit",
+    "release": "cd packages/@blazesrus/vike-svelte/ && pnpm run release",
+    "release:commit": "cd packages/@blazesrus/vike-svelte/ && pnpm run release:commit",
     "========= Only allow pnpm; forbid yarn & npm": "",
     "preinstall": "npx only-allow pnpm"
   },
-  "pnpm": {
-    "overrides": {
-      "vike-svelte": "link:./packages/vike-svelte/"
-    }
-  },
-  "packageManager": "pnpm@8.6.12"
+  "packageManager": "pnpm@10.13.1"
 }

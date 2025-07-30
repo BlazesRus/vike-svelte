@@ -2,7 +2,7 @@
 [![npm version](https://img.shields.io/npm/v/vike-svelte)](https://www.npmjs.com/package/vike-svelte)
 
 # 🚧 WIP `vike-svelte`
-
+BlazesRus fork of vike-svelte(https://github.com/brandonxiang/vike-svelte)[https://github.com/brandonxiang/vike-svelte]
 Svelte integration for [Vike](https://github.com/vikejs/vike) (using the [V1 design](https://vike.dev/migration/v1-design)).
 
 > [!NOTE]  
