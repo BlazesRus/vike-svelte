@@ -12,10 +12,22 @@ See [examples/](https://github.com/vikejs/vike-svelte/tree/main/examples).
 
 Feel free for issue! PR Welcome !
 
+### How to import into vite config
+
+import vikeSvelte from '@blazesrus/vike-svelte'
+
 ## Roadmap
 
-- 0.x (vite 4.x/svelte 4.x/nodejs 16.x)
-- 1.x (vite 5.x/svelte 5.x/nodejs 18.x)
+- **0.x** (vite 4.x/svelte 4.x/nodejs 16.x)
+- **1.x** (vite 5.x/svelte 5.x/nodejs 18.x)
+- **1.0.2** [2025-08-01] (By BlazesRus (James Armstrong))
+  Changed:
+  - Consumers can now import the plugin simply via:
+  ```ts
+  import vikeSvelte from '@blazesrus/vike-svelte'
+	```
+
+  - Bumped all devDependencies to their latest minor/patch releases
 
 ## Difference with vike-{react, vue, solid}
 

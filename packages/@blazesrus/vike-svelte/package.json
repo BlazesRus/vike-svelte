@@ -1,38 +1,63 @@
 {
   "name": "@blazesrus/vike-svelte",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
-  "main": "./renderer/+config.js",
-  "types": "./dist/renderer/+config.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "./config": "./renderer/+config.js",
-    "./clientOnly": "./components/ClientOnly.svelte",
-    "./__internal/integration/onRenderHtml": "./renderer/integration/onRenderHtml.js",
-    "./__internal/integration/onRenderClient": "./renderer/integration/onRenderClient.js",
-    "./context": "./renderer/utils/context.js"
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./config": {
+      "import": "./dist/renderer/+config.js",
+      "types": "./dist/renderer/+config.d.ts"
+    },
+    "./clientOnly": {
+      "import": "./dist/components/ClientOnly.svelte",
+      "types": "./dist/components/ClientOnly.svelte"
+    },
+    "./__internal/integration/onRenderHtml": {
+      "import": "./dist/renderer/integration/onRenderHtml.js",
+      "types": "./dist/renderer/integration/onRenderHtml.d.ts"
+    },
+    "./__internal/integration/onRenderClient": {
+      "import": "./dist/renderer/integration/onRenderClient.js",
+      "types": "./dist/renderer/integration/onRenderClient.d.ts"
+    },
+    "./context": {
+      "import": "./dist/renderer/utils/context.js",
+      "types": "./dist/renderer/utils/context.d.ts"
+    }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
+    "build:watch": "tsc -p tsconfig.build.json --watch",
     "release": "release-it"
   },
   "peerDependencies": {
-    "svelte": "5.x",
     "solid-js": "^1.8.7",
-    "vike": ">=0.4.195",
-    "vite": ">=5.0.0"
+    "svelte": "5.x",
+    "vike": ">=0.4.236",
+    "vite": ">=7.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.9.1",
-    "release-it": "^17.10.0",
-    "svelte": "^5.2.7",
-    "typescript": "^5.6.3",
-    "vike": "^0.4.204",
-    "esm-env": "^1.1.4"
+    "@sveltejs/vite-plugin-svelte": "^6.1.0",
+    "@types/node": "^24.1.0",
+    "esm-env": "^1.2.2",
+    "release-it": "^19.0.4",
+    "svelte": "^5.37.1",
+    "typescript": "^5.8.3",
+    "vike": "^0.4.236"
+  },
+  "dependencies": {
+    "vite": "^7.0.6"
   },
   "typesVersions": {
     "*": {
       "config": [
-        "./dist/renderer/+config.d.ts"
+        "./dist/renderer/ config.d.ts"
       ],
       "__internal/integration/onRenderHtml": [
         "./dist/renderer/integration/onRenderHtml.d.ts"
@@ -51,6 +76,6 @@
     "components/",
     "hooks/"
   ],
-	"repository": "github:blazesrus/vike-svelte",
+  "repository": "github:blazesrus/vike-svelte",
   "license": "MIT"
 }

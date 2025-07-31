@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
     "checkJs": true,
     "allowJs": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "target": "ESNext",
     "lib": [
       "DOM",
@@ -15,6 +17,7 @@
     "allowSyntheticDefaultImports": true,
     "noUncheckedIndexedAccess": true,
     "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "emitDeclarationOnly": true,
     "declaration": true,
     "outDir": "./dist/",
@@ -26,5 +29,6 @@
     "./renderer",
     "./hooks",
     "./components",
+    "types/**/*"
   ]
 }

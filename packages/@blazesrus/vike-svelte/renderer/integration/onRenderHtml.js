@@ -11,7 +11,7 @@ import { render } from 'svelte/server'
 /**
  * 
  * @param {import('vike/types').PageContext} pageContext 
- * @returns 
+ * @returns {any}
  */
 function onRenderHtml(pageContext) {
   /** @type{*} */
