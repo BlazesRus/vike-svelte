@@ -1,4 +1,4 @@
-// src/index.ts
+﻿// src/index.ts
 import type { PluginOption } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import pluginVike from 'vike/plugin'
@@ -11,7 +11,7 @@ export interface VikeSvelteOptions {
   vike?: VikePluginOptions
 }
 
-export default function vikeSvelte(
+function vikeSvelte(
   {
     svelte: svelteOpts = {},
     vike: vikeOpts = {},
@@ -22,3 +22,9 @@ export default function vikeSvelte(
     pluginVike(vikeOpts),
   ]
 }
+
+// named export
+export { vikeSvelte }
+
+// default export
+export default vikeSvelte
