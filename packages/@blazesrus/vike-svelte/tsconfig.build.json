@@ -10,6 +10,7 @@
     "index.ts",
     "components/**/*",
     "hooks/**/*",
-    "renderer/**/*"
+    "renderer/**/*",
+    "types/**/*"
   ]
 }

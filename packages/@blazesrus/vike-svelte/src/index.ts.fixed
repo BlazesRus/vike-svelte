@@ -1,0 +1,26 @@
+// src/index.ts
+import type { Plugin } from 'vite'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
+import pluginVike from 'vike/plugin'
+
+export interface VikeSvelteOptions {
+  // options you want to pass into @sveltejs/vite-plugin-svelte
+  svelte?: Parameters<typeof svelte>[0]
+  // any other Vike plugin options
+  vike?: Parameters<typeof pluginVike>[0]
+}
+
+export default function vikeSvelte(
+  {
+    svelte: svelteOptions = {},
+    vike: vikeOptions = {},
+  }: VikeSvelteOptions = {}
+): Plugin[] {
+  return [
+    // Svelte plugin
+    svelte(svelteOptions),
+    
+    // Vike plugin
+    pluginVike(vikeOptions)
+  ]
+}
