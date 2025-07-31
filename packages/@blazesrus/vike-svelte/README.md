@@ -1,5 +1,5 @@
 [<img src="https://vike.dev/vike-readme.svg" align="right" height="90">](https://vike.dev)
-[![npm version](https://img.shields.io/npm/v/vike-svelte)](https://www.npmjs.com/package/vike-svelte)
+[![npm version](https://img.shields.io/npm/v/@blazesrus/vike-svelte)](https://www.npmjs.com/package/@blazesrus/vike-svelte)
 
 # 🚧 WIP `vike-svelte`
 BlazesRus fork of vike-svelte(https://github.com/brandonxiang/vike-svelte)[https://github.com/brandonxiang/vike-svelte]
