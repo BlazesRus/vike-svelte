@@ -1,6 +1,6 @@
 {
   "name": "@blazesrus/vike-svelte",
-  "version": "1.0.2-alpha",
+  "version": "1.0.2-alpha.1",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -57,7 +57,7 @@
   "typesVersions": {
     "*": {
       "config": [
-        "./dist/renderer/ config.d.ts"
+        "./dist/renderer/+config.d.ts"
       ],
       "__internal/integration/onRenderHtml": [
         "./dist/renderer/integration/onRenderHtml.d.ts"
