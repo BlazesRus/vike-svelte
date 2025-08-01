@@ -1,6 +1,6 @@
 {
   "name": "@blazesrus/vike-svelte",
-  "version": "1.0.2-alpha.2",
+  "version": "1.0.2-alpha.3",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -9,6 +9,14 @@
     ".": {
       "import": "./dist/index.js",
       "default": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/components/index.js",
+      "types": "./dist/components/index.d.ts"
+    },
+    "./components/*": {
+      "import": "./dist/components/*.js",
+      "types": "./dist/components/*.d.ts"
     },
     "./config": {
       "import": "./dist/renderer/+config.js",

@@ -6,3 +6,5 @@ export { getTitle } from './getTitle.js'
 
 // types for consumers
 export type * from './types.d.ts'
+
+export * from '../components/index.js'
